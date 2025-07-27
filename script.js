@@ -74,12 +74,10 @@ for (city of activeList) {
 }
 
 let FetchData = (params) => {
-  axios
-    .get("https://api.aladhan.com/v1/timingsByCity", {
-      params: Params,
-    })
-    .then((response) => {
-      myData = response.data.data;
+  fetch(`/.netlify/functions/getPrayerTimes?country=${params.country}&city=${params.city}`)
+    .then(res => res.json())
+    .then(data => {
+      myData = data;
       fillDateArabic();
       fillDateEnglish();
       FillLocationData();
@@ -88,7 +86,7 @@ let FetchData = (params) => {
       fillAdhanMenu();
       setInterval(detectNextPrayer, 60000);
     })
-    .catch((error) => {
+    .catch(error => {
       alert("Error fetching prayer times:", error);
     });
 };
