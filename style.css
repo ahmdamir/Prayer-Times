@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  width: 100%;
+}
+body {
+ 
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Amiri", serif;
+}
+.contianer {
+  color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+.contianer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #626364af;
+  z-index: -1;
+}
+.contianer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: scalePulse 10s infinite alternate ease-in-out;
+}
+@keyframes scalePulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+/* Start Header */
+.header {
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(83, 83, 80, 0.5);
+  height: 100px;
+  width: 100%;
+}
+.header .date {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+.header .date .arabic {
+  direction: rtl;
+}
+
+.header .date .english {
+  direction: ltr;
+}
+
+.header .project_name {
+  font-size: 35px;
+  font-family: "Rakkas", serif;
+}
+
+@media (max-width: 667px) {
+  .header .date {
+    font-size: 15px;
+    border: none;
+    padding: 5px;
+  }
+  .header .project_name {
+    font-size: 20px;
+  }
+}
+/* End Header */
+
+/* Start City & Country */
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  direction: rtl;
+  padding: 20px;
+  margin-right: 50px;
+  font-family: 'Rakkas';
+}
+.location .city span {
+  font-size: 80px;
+}
+.location .country span {
+  font-size: 40px;
+}
+@media (max-width: 667px) {
+  
+  .location {
+    margin-right: 0 !important;
+  }
+  .location .city span {
+    font-size: 40px !important;
+  }
+
+  .location .country span {
+    font-size: 28px !important;
+  }
+ 
+}
+/* End City & Country */
+
+/* Start Selection */
+.selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  direction: rtl;
+}
+.CountrySelect select,
+.CitySelect select {
+  width: 220px;
+  font-size: 20px;
+  font-family: 'Amiri';
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #5f9ea0d1;
+  color: white;
+  outline: none;
+}
+
+@media (max-width: 667px) {
+  .selection {
+    flex-direction: column;
+  }
+}
+/* End Selection */
+
+/* Start Adhan Menu */
+
+.adhan{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  background-color: rgba(83, 83, 80, 0.5);
+  border-radius: 20px;
+  font-size: 40px;
+  width: 90%;
+  margin: 50px auto;
+  direction: rtl;
+}
+.adhan .adhanName{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.adhan .adhanTime{
+  display: flex;
+  justify-content: space-around;
+}
+.adhan  span {
+  flex: 1;
+}
+.next_Pray_Time {
+  color: #FFF9BD;
+    font-weight: bold;
+    font-size: larger;
+}
+@media (max-width: 991px) {
+  .adhan{
+  padding: 15px;
+  font-size: 30px;
+  width: 95%;
+  }
+}
+@media (max-width: 667px) {
+  .adhan{
+  gap: 15px;
+  font-size: 16px;
+  width: 90%;
+  padding: 15px;
+}
+
+  .next_Pray_Time {
+    font-size: large;
+  }
+  
+}
+/* End Adhan Menu */
+
+/* Start Next Prayer */
+.next_prayer {
+  font-size: 45px;
+  padding: 15px;
+  text-align: center;
+  color: #FFF9BD;
+  margin: 0 auto;
+}
+@media (max-width: 667px) {
+  .next_prayer {
+    font-size: 18px !important;
+    padding: 5px !important;
+  }
+}
+/* End Next Prayer */

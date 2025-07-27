@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./mosque.png" type="image/x-icon">
+    <title>Prayer Time</title>
+</head>
+<body>
+    <div class="contianer">
+        <!-- Start Slider -->
+            <img src="./Photos/Background_photos/bg5.jpg" alt="bg1" id="slider">
+        <!-- End Slider -->
+        <!-- Start Date Now -->
+            <div class="header">
+            <div class="date arabic">
+                <span id="Arabic_day"></span>
+                <span id="day"></span>
+                <span id="Arabic_month"></span>
+                <span id="year"></span>
+            </div>
+            <div class="project_name">مواقيت الصلاة</div>
+            <div class="date english">
+                <span id="date_en"></span>
+            </div>
+            </div>
+        <!-- End Date Now -->
+
+        <!-- Start City & Country  --> 
+            <div class="location">
+                <div class="city">
+                    <span id="city"></span>
+                </div>
+                <div class="country">
+                    <span id="country"></span>
+                </div>
+            </div>
+        <!-- End City & Country -->
+
+        <!-- Start Selection Menu -->
+            <div class="selection">
+                <div class="CountrySelect">
+                <select name="Country" id="CountrySellect">
+                    <option value="EG" id="EG">مصر</option>
+                    <option value="SA">المملكة العربية السعودية</option>
+                    <option value="UAE">الإمارات العربية المتحدة</option>
+                </select>
+            </div>
+            <div class="CitySelect">
+                <select name="City" id="CitySellect"></select>
+            </div>
+            </div>
+        
+        <!-- End Selection Menu -->
+        <!-- Start Adhan Menu -->
+            <div class="adhan">
+                <div class="adhanName">
+                    <span>الفجر</span>
+                    <span>الظهر</span>
+                    <span>العصر</span>
+                    <span>المغرب</span>
+                    <span>العشاء</span>
+                </div>
+                <div class="adhanTime">
+                    <span id="الفجر"></span>
+                    <span id="الظهر"></span>
+                    <span id="العصر"></span>
+                    <span id="المغرب"></span>
+                    <span id="العشاء"></span>
+                </div>
+            </div>
+        <!-- End Adhan Menu -->
+    
+        <!-- Start Next Prayer -->
+            <div class="next_prayer">
+                <span id="text">الوقت المتبقي علي صلاة </span>
+                <span id="next_prayer_name"></span>
+                <span id="next_prayer_time"></span>
+            </div>
+        <!-- End Next Prayer -->
+        
+    </div>
+
+    <!-- Audio element for Adhan (Naseer Al-Qatami) -->
+    <audio id="adhanAudio" src="https://archive.org/download/Naseer.Al.Qtami.Azan/Naseer.Al.Qtami.Azan.mp3" preload="auto"></audio>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
