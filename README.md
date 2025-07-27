@@ -20,7 +20,7 @@ A responsive Arabic web app that displays Islamic prayer times based on selected
 
 ## 🚀 Live Demo
 
-👉 [Click here to try the live version](https://your-netlify-link.netlify.app)
+👉 [Click here to try the live version](https://fluffy-cuchufli-e539e3.netlify.app/)
 
 > Replace with your actual Netlify URL once deployed.
 
@@ -54,3 +54,13 @@ A responsive Arabic web app that displays Islamic prayer times based on selected
 1. Clone the repository:
    ```bash
    git clone git@github.com:ahmdamir/Prayer-Times.git
+
+## 👨‍💻 Author
+
+Made with ❤️ by [Ahmed Amir](https://github.com/ahmdamir)
+
+- 🔗 GitHub: [@ahmdamir](https://github.com/ahmdamir)  
+- 🌐 Live App: [cheerful-gingersnap-1fb94f.netlify.app](https://cheerful-gingersnap-1fb94f.netlify.app/)  
+- 📧 Email: ahmedamir321123@gmail.com
+- 💼 LinkedIn: [Ahmed Amir](https://www.linkedin.com/in/ahmd-amir/)  
+
