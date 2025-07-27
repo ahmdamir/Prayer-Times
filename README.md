@@ -59,7 +59,7 @@ A responsive Arabic web app that displays Islamic prayer times based on selected
 Made with ❤️ by [Ahmed Amir](https://github.com/ahmdamir)
 
 - 🔗 GitHub: [@ahmdamir](https://github.com/ahmdamir)  
-- 🌐 Live App: [cheerful-gingersnap-1fb94f.netlify.app](https://cheerful-gingersnap-1fb94f.netlify.app/)  
+- 🌐 Live App: [cheerful-gingersnap-1fb94f.netlify.app](https://fluffy-cuchufli-e539e3.netlify.app/)  
 - 📧 Email: ahmedamir321123@gmail.com
 - 💼 LinkedIn: [Ahmed Amir](https://www.linkedin.com/in/ahmd-amir/)  
 
