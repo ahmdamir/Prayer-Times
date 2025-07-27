@@ -22,7 +22,6 @@ A responsive Arabic web app that displays Islamic prayer times based on selected
 
 👉 [Click here to try the live version](https://fluffy-cuchufli-e539e3.netlify.app/)
 
-> Replace with your actual Netlify URL once deployed.
 
 ---
 
