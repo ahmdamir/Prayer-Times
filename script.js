@@ -210,7 +210,7 @@ const detectNextPrayer = () => {
     if (diff > 0) {
       if (currentMinutes === 0) {
         setTimeout(() => {
-          FetchData(Params); // إعادة تحميل البيانات عند بدايه يوم جديد
+          location.reload(); // إعادة تحميل البيانات عند بدايه يوم جديد
         }, timeout = 60000);
       }
       nextprayerName = prayers[i].prayerName;
