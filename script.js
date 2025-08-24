@@ -211,7 +211,7 @@ const detectNextPrayer = () => {
       if (currentMinutes === 0) {
         setTimeout(() => {
           location.reload(); // إعادة تحميل البيانات عند بدايه يوم جديد
-        }, timeout = 60000);
+        }, 60000);
       }
       nextprayerName = prayers[i].prayerName;
       const minutes = (diff) % 60;
@@ -264,3 +264,4 @@ const fillAdhanMenu = () => {
     }
   }
 };
+
