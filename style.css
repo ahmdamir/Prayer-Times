@@ -224,3 +224,29 @@ body {
   }
 }
 /* End Next Prayer */
+
+/* ---- fit everything in one screen ---- */
+.contianer { display: flex; flex-direction: column; }
+.header { flex: 0 0 auto; height: clamp(60px, 10vh, 100px); }
+.location { flex: 0 0 auto; padding: clamp(5px, 1.5vh, 20px) 20px; }
+.location .city span { font-size: clamp(36px, 8vh, 80px); }
+.location .country span { font-size: clamp(22px, 4vh, 40px); }
+.selection { flex: 0 0 auto; }
+.adhan {
+  flex: 0 1 auto;
+  margin: auto;                          /* centers the card in the free space */
+  padding: clamp(12px, 3vh, 40px);
+  gap: clamp(10px, 2.5vh, 30px);
+  font-size: clamp(18px, 4.5vh, 40px);
+}
+.next_prayer {
+  flex: 0 0 auto;
+  font-size: clamp(20px, 5vh, 45px);
+  padding: clamp(5px, 1.5vh, 15px);
+  margin: 0 auto clamp(5px, 1.5vh, 20px);
+}
+@media (max-width: 667px) {
+  .adhan { font-size: 16px; }
+  .next_prayer { font-size: 18px !important; }
+  .location .city span { font-size: 40px !important; }
+}
