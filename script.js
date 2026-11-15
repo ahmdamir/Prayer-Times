@@ -74,10 +74,10 @@ for (city of activeList) {
 }
 
 let FetchData = (params) => {
-  fetch(`/.netlify/functions/getPrayerTimes?country=${params.country}&city=${params.city}`)
-    .then(res => res.json())
-    .then(data => {
-      myData = data;
+  fetch(`https://api.aladhan.com/v1/timingsByCity?country=${params.country}&city=${params.city}`)
+  .then(res => res.json())
+  .then(json => {
+    myData = json.data;  
       fillDateArabic();
       fillDateEnglish();
       FillLocationData();
