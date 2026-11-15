@@ -20,7 +20,7 @@ A responsive Arabic web app that displays Islamic prayer times based on selected
 
 ## 🚀 Live Demo
 
-👉 [Click here to try the live version](https://fluffy-cuchufli-e539e3.netlify.app/)
+👉 [Click here to try the live version](https://ahmdamir.github.io/Prayer-Times/)
 
 
 ---
